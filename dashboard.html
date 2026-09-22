@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite Express | Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>QuickBite <span>Express</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="dashboard.html" class="active">Menu</a></li>
+                <li><a href="#cart">My Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" class="btn btn-outline">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Dashboard Layout -->
+    <main class="dashboard-container">
+        
+        <!-- Main Content Area: Search & Food Menu -->
+        <section class="menu-section">
+            <div class="menu-header">
+                <h2>Explore Food Menu</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search pizza, burger, pasta..." class="form-input">
+                </div>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="category-tags">
+                <button class="tag active">All</button>
+                <button class="tag">Burgers</button>
+                <button class="tag">Pizza</button>
+                <button class="tag">Pasta</button>
+                <button class="tag">Drinks</button>
+            </div>
+
+            <!-- Menu Cards Grid -->
+            <div class="menu-grid">
+                
+                <div class="food-card">
+                    <div class="food-img-placeholder">🍔</div>
+                    <div class="food-info">
+                        <h3>Classic Cheeseburger</h3>
+                        <p class="food-desc">Juicy beef patty with cheddar, lettuce, and special sauce.</p>
+                        <div class="food-footer">
+                            <span class="price">$8.99</span>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img-placeholder">🍕</div>
+                    <div class="food-info">
+                        <h3>Pepperoni Supreme</h3>
+                        <p class="food-desc">Loaded with pepperoni, mozzarella, and savory tomato sauce.</p>
+                        <div class="food-footer">
+                            <span class="price">$12.50</span>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img-placeholder">🍝</div>
+                    <div class="food-info">
+                        <h3>Creamy Alfredo Pasta</h3>
+                        <p class="food-desc">Penne pasta in rich garlic cream sauce with parmesan.</p>
+                        <div class="food-footer">
+                            <span class="price">$10.99</span>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img-placeholder">🥤</div>
+                    <div class="food-info">
+                        <h3>Iced Berry Smoothie</h3>
+                        <p class="food-desc">Freshly blended strawberry, blueberry, and chilled yogurt.</p>
+                        <div class="food-footer">
+                            <span class="price">$4.50</span>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sidebar Area: Cart Summary -->
+        <aside class="cart-sidebar" id="cart">
+            <h3>Your Order</h3>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div>
+                        <h4>Classic Cheeseburger</h4>
+                        <span class="cart-item-price">$8.99 x 1</span>
+                    </div>
+                    <button class="remove-btn">&times;</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$8.99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>$2.00</span>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>$10.99</span>
+                </div>
+                <button class="btn btn-primary btn-full mt-1">Checkout & Pay</button>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>
