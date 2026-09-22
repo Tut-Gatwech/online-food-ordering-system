@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite Express | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">QuickBite <span>Admin Panel</span></div>
+        <nav class="nav-links">
+            <a href="admin.html" class="active">Overview</a>
+            <a href="dashboard.html" target="_blank">View Customer Store</a>
+            <a href="login.html" class="btn btn-outline">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <!-- Left Side: Add New Menu Item Form -->
+        <section class="menu-section">
+            <div class="menu-header">
+                <h2>Manage Menu Items</h2>
+            </div>
+
+            <!-- Form to Add Food Item -->
+            <form class="admin-form-card" id="add-food-form">
+                <h3>Add New Dish</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="dish-name">Item Name</label>
+                        <input type="text" id="dish-name" placeholder="e.g. Garlic Bread" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="dish-category">Category</label>
+                        <select id="dish-category" class="form-input" required>
+                            <option value="Burgers">Burgers</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dish-price">Price ($)</label>
+                        <input type="number" id="dish-price" step="0.01" placeholder="5.99" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="dish-desc">Description</label>
+                        <input type="text" id="dish-desc" placeholder="Short item description..." class="form-input">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-1">+ Add Food Item</button>
+            </form>
+
+            <!-- Active Menu Items Table -->
+            <div class="table-card mt-2">
+                <h3>Current Active Menu</h3>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Classic Cheeseburger</td>
+                            <td>Burgers</td>
+                            <td>$8.99</td>
+                            <td><button class="btn-danger-sm">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Pepperoni Supreme</td>
+                            <td>Pizza</td>
+                            <td>$12.50</td>
+                            <td><button class="btn-danger-sm">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Creamy Alfredo Pasta</td>
+                            <td>Pasta</td>
+                            <td>$10.99</td>
+                            <td><button class="btn-danger-sm">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Right Side: Recent Orders Panel -->
+        <aside class="cart-sidebar">
+            <h3>Recent Orders</h3>
+            <div class="admin-order-list">
+                
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">Order #1042</span>
+                        <span class="badge badge-pending">Pending</span>
+                    </div>
+                    <p class="order-customer"><strong>Customer:</strong> Sarah Jenkins</p>
+                    <p class="order-items">1x Pepperoni Supreme, 1x Iced Berry Smoothie</p>
+                    <div class="order-footer">
+                        <span>Total: $17.00</span>
+                        <button class="btn btn-sm btn-secondary">Process</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <span class="order-id">Order #1041</span>
+                        <span class="badge badge-completed">Delivered</span>
+                    </div>
+                    <p class="order-customer"><strong>Customer:</strong> Alex Rivera</p>
+                    <p class="order-items">2x Classic Cheeseburger</p>
+                    <div class="order-footer">
+                        <span>Total: $17.98</span>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>
