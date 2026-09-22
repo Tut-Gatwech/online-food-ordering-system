@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite Express | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <h2>Create Account</h2>
+            <p>Join QuickBite to order or manage deliveries</p>
+        </div>
+
+        <form action="login.html" method="GET" class="auth-form">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="John Doe" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="name@example.com" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Register As</label>
+                <select id="role" name="role" required class="form-input">
+                    <option value="customer">Customer</option>
+                    <option value="admin">Restaurant Manager</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+            <p><a href="index.html">← Back to Home</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

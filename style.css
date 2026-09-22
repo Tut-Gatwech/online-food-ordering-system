@@ -329,3 +329,84 @@ footer {
 .mt-1 {
     margin-top: 1rem;
 }
+/* ==========================================
+   Authentication Views (login.html & signup.html)
+   ========================================== */
+.auth-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f6f8;
+}
+
+.auth-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.auth-header h2 {
+    color: var(--dark, #1a1a1a);
+    margin-bottom: 0.4rem;
+}
+
+.auth-header p {
+    color: var(--gray, #6c757d);
+    font-size: 0.95rem;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary, #ff5722);
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: var(--primary, #ff5722);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer p {
+    margin-top: 0.5rem;
+}
